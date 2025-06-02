@@ -30,5 +30,9 @@ robotframework
 robotframework-seleniumlibrary
 selenium
 
+rodar em um terminal o python3 http.server 8080
+rodar com o robot tests/teste_login.robot
+
+
 
 

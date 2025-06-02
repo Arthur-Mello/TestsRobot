@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${LOGIN_PAGE}         http://localhost:8000/index.html
+${LOGIN_PAGE}         http://localhost:8080/index.html
 ${BROWSER}            chrome
 ${VALID_USER}         admin
 ${VALID_PASSWORD}     123456
@@ -34,6 +34,6 @@ Login Com Senha Inválida
     Input Text      id=username      ${VALID_USER}
     Input Text      id=password      ${INVALID_PASSWORD}
     Click Button    xpath=//button
-    Sleep           1s
+    Sleep           4s
     Element Text Should Be    id=error-message    Usuário ou senha incorretos.
     Close Browser
